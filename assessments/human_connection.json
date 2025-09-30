@@ -1,0 +1,80 @@
+{
+    "title": "Human Connection Quiz",
+    "slug": "human-connection-quiz",
+    "description": "A quiz about the importance and impact of human connections",
+    "assessment_type": "multiple_choice",
+    "intro_markdown": "Test your knowledge about human connection and social relationships.",
+    "outro_markdown": "Thank you for completing the Human Connection Quiz!",
+    "questions": [
+        {
+            "question": "What is the primary benefit of human connection?",
+            "options": [
+                "Increased wealth",
+                "Enhanced emotional well-being",
+                "Greater knowledge",
+                "Better physical appearance"
+            ],
+            "answer_index": 1
+        },
+        {
+            "question": "Which of the following statements about social support is true?",
+            "options": [
+                "It only matters in times of crisis",
+                "It can improve mental health and resilience",
+                "It is less important than financial support",
+                "It is only beneficial for extroverts"
+            ],
+            "answer_index": 1
+        },
+        {
+            "question": "How does loneliness affect physical health?",
+            "options": [
+                "It has no impact",
+                "It can lead to increased stress and health problems",
+                "It improves immune function",
+                "It enhances overall well-being"
+            ],
+            "answer_index": 1
+        },
+        {
+            "question": "What role does empathy play in human connections?",
+            "options": [
+                "It creates misunderstandings",
+                "It fosters deeper relationships and understanding",
+                "It is unnecessary for meaningful interactions",
+                "It only benefits the empathetic person"
+            ],
+            "answer_index": 1
+        },
+        {
+            "question": "Which activity is most likely to strengthen human connections?",
+            "options": [
+                "Spending time alone",
+                "Participating in team sports or group activities",
+                "Watching movies alone",
+                "Focusing on individual accomplishments"
+            ],
+            "answer_index": 1
+        },
+        {
+            "question": "What impact can technology have on human connection?",
+            "options": [
+                "It always strengthens relationships",
+                "It can both enhance and hinder connections",
+                "It has no effect on human interaction",
+                "It only benefits long-distance relationships"
+            ],
+            "answer_index": 1
+        },
+        {
+            "question": "Why is vulnerability important in forming connections?",
+            "options": [
+                "It weakens relationships",
+                "It allows for authenticity and trust",
+                "It is a sign of insecurity",
+                "It should be avoided at all costs"
+            ],
+            "answer_index": 1
+        }
+    ]
+}
