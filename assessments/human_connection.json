@@ -8,6 +8,7 @@
     "questions": [
         {
             "question": "What is the primary benefit of human connection?",
+            "question_description": "Understanding the core value of social bonds helps us prioritize relationships in our lives.",
             "options": [
                 "Increased wealth",
                 "Enhanced emotional well-being",
@@ -18,6 +19,7 @@
         },
         {
             "question": "Which of the following statements about social support is true?",
+            "question_description": "Social support is a fundamental pillar of mental health across all life stages.",
             "options": [
                 "It only matters in times of crisis",
                 "It can improve mental health and resilience",
@@ -28,6 +30,7 @@
         },
         {
             "question": "How does loneliness affect physical health?",
+            "question_description": "Research shows that social isolation has measurable effects on our physical well-being.",
             "options": [
                 "It has no impact",
                 "It can lead to increased stress and health problems",
@@ -38,6 +41,7 @@
         },
         {
             "question": "What role does empathy play in human connections?",
+            "question_description": "Empathy is the foundation of meaningful relationships and mutual understanding.",
             "options": [
                 "It creates misunderstandings",
                 "It fosters deeper relationships and understanding",
@@ -48,6 +52,7 @@
         },
         {
             "question": "Which activity is most likely to strengthen human connections?",
+            "question_description": "Shared experiences and collaborative activities create opportunities for bonding.",
             "options": [
                 "Spending time alone",
                 "Participating in team sports or group activities",
@@ -58,6 +63,7 @@
         },
         {
             "question": "What impact can technology have on human connection?",
+            "question_description": "Technology is a tool that can either bridge distances or create barriers in relationships.",
             "options": [
                 "It always strengthens relationships",
                 "It can both enhance and hinder connections",
@@ -68,6 +74,7 @@
         },
         {
             "question": "Why is vulnerability important in forming connections?",
+            "question_description": "Opening up authentically allows others to truly know and connect with us.",
             "options": [
                 "It weakens relationships",
                 "It allows for authenticity and trust",

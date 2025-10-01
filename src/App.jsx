@@ -1,29 +1,46 @@
-import { BrowserRouter, Routes, Route, Link } from 'react-router-dom'
+import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 import Home from './pages/Home'
+import About from './pages/About'
+import Research from './pages/Research'
+import Subscribe from './pages/Subscribe'
+import Contact from './pages/Contact'
 import AssessmentPage from './pages/AssessmentPage'
+
+function Layout() {
+  const location = useLocation()
+
+  // Check if current path is an assessment (not one of the static pages)
+  const staticPages = ['/', '/about', '/research', '/subscribe', '/contact', '/terms', '/privacy']
+  const isQuizPage = !staticPages.includes(location.pathname)
+
+  return (
+    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50 flex flex-col">
+      {!isQuizPage && <Navbar />}
+
+      <main className="flex-grow">
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/research" element={<Research />} />
+            <Route path="/subscribe" element={<Subscribe />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/:slug" element={<AssessmentPage />} />
+          </Routes>
+        </div>
+      </main>
+
+      {!isQuizPage && <Footer />}
+    </div>
+  )
+}
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 lg:py-12">
-          <header className="mb-8 sm:mb-12">
-            <Link to="/" className="block">
-              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-center mb-2 sm:mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hover:from-blue-700 hover:to-purple-700 transition-all cursor-pointer">
-                Assessment Center
-              </h1>
-            </Link>
-            <p className="text-center text-gray-600 text-sm sm:text-base">
-              Test your knowledge with our interactive quizzes
-            </p>
-          </header>
-
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/:slug" element={<AssessmentPage />} />
-          </Routes>
-        </div>
-      </div>
+      <Layout />
     </BrowserRouter>
   )
 }

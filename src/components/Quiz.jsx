@@ -107,9 +107,15 @@ function Quiz({ assessment, onBack }) {
               </div>
             </div>
 
-            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-8 text-gray-800 leading-tight">
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 text-gray-800 leading-tight">
               {currentQuestion.question}
             </h3>
+
+            {currentQuestion.question_description && (
+              <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 italic leading-relaxed">
+                {currentQuestion.question_description}
+              </p>
+            )}
 
             <div className="space-y-3 sm:space-y-4">
               {currentQuestion.options.map((option, index) => (
