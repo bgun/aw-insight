@@ -3,6 +3,7 @@
     "slug": "maintaining-relationships-after-50",
     "description": "Explore strategies for nurturing meaningful connections in midlife and beyond",
     "assessment_type": "multiple_choice",
+    "image": "/images/three-friends.avif",
     "intro_markdown": "Strong relationships are essential to our well-being at every age. This assessment will help you reflect on your approach to maintaining and deepening connections after 50.",
     "outro_markdown": "Thank you for completing this assessment. Building satisfying relationships after 50 requires intention, vulnerability, and consistent effort—but the rewards are immeasurable.",
     "questions": [
@@ -15,7 +16,8 @@
                 "Once a month or less",
                 "Rarely or never"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p><strong>Regular meaningful conversations</strong> are the lifeblood of close relationships. Making time weekly or more often helps maintain emotional intimacy, provides opportunities to offer and receive support, and keeps you connected to the lives of those you care about. These conversations don't need to be long—even brief check-ins can nurture closeness when they're genuine and consistent. <em>Prioritizing this time demonstrates that relationships matter to you.</em></p>"
         },
         {
             "question": "When conflicts arise in your relationships, how do you typically respond?",
@@ -26,7 +28,8 @@
                 "I avoid confrontation and hope issues resolve themselves",
                 "I tend to withdraw or become defensive"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p>Healthy conflict resolution requires <strong>addressing issues openly and working toward resolution</strong>. This approach respects both yourself and the other person by acknowledging that the relationship matters enough to work through difficulties. Avoiding conflict or smoothing things over may seem easier in the moment, but unresolved issues often fester and create distance. <br><br>Productive conflict involves <em>active listening, expressing needs clearly, and finding mutually acceptable solutions</em>—skills that actually deepen trust and intimacy.</p>"
         },
         {
             "question": "How comfortable are you with being vulnerable and sharing your true feelings?",
@@ -37,7 +40,8 @@
                 "Uncomfortable—I prefer to keep feelings private",
                 "Very uncomfortable—I rarely share my feelings"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p>Being <strong>comfortable sharing openly with trusted people</strong> is essential for deep connection. Vulnerability isn't about oversharing with everyone—it's about having the courage to be authentic with those you trust. After 50, many people find it easier to be vulnerable as they've gained self-acceptance and care less about others' judgments. <em>Sharing your true feelings</em> invites others to know the real you and creates opportunities for genuine intimacy and mutual support.</p>"
         },
         {
             "question": "How actively do you seek out opportunities to meet new people?",
@@ -48,7 +52,8 @@
                 "Rarely—I'm content with my current circle",
                 "Never—I prefer to keep my existing relationships"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p><strong>Actively seeking new connections</strong> through activities and groups enriches your life in multiple ways. After 50, life transitions—retirement, relocation, loss—can shrink social circles, making it important to proactively build new relationships. New friendships bring fresh perspectives, shared interests, and renewed energy. <br><br>This doesn't mean abandoning existing relationships; rather, it means <em>staying open to growth and connection</em> as life evolves.</p>"
         },
         {
             "question": "How often do you express appreciation and gratitude to people in your life?",
@@ -59,7 +64,8 @@
                 "Rarely—I assume people know how I feel",
                 "Never—I'm not comfortable expressing these feelings"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p><strong>Frequently expressing appreciation and gratitude</strong> is one of the simplest yet most powerful relationship-building practices. People need to hear that they matter—assumptions aren't enough. Regular expressions of gratitude create positive emotional climates, reinforce what you value about others, and motivate continued connection. <em>A simple \"I appreciate you\" or \"Thank you for being in my life\"</em> can profoundly strengthen bonds and bring joy to both giver and receiver.</p>"
         },
         {
             "question": "How do you maintain friendships when life circumstances change?",
@@ -70,7 +76,8 @@
                 "I often lose touch when circumstances change",
                 "I believe friendships should maintain themselves naturally"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p>Long-lasting friendships require <strong>actively adjusting and finding new ways to stay connected</strong> as circumstances evolve. When someone moves, changes jobs, or experiences major life transitions, relationships that matter take intentional effort to maintain. This might mean switching from weekly coffee to monthly video calls, or finding new shared activities. <hr><em>Friendships don't maintain themselves</em>—they thrive when both people demonstrate that the relationship is worth the effort to adapt.</p>"
         },
         {
             "question": "How willing are you to forgive and move past hurts in relationships?",
@@ -81,7 +88,8 @@
                 "Not very willing—I find it hard to forget",
                 "Unwilling—I tend to hold onto past hurts"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p><strong>Forgiveness is essential</strong> for long-term relationship health. Being willing to work through issues and move forward doesn't mean forgetting or condoning hurtful behavior—it means choosing not to let resentment poison the relationship. Holding grudges creates emotional distance and prevents healing. <br><br>Forgiveness is ultimately a gift you give yourself, freeing you from the burden of carrying past hurts and <em>opening space for renewed connection and growth</em>.</p>"
         },
         {
             "question": "How do you balance giving and receiving support in your relationships?",
@@ -92,7 +100,8 @@
                 "I tend to receive more than I give",
                 "I struggle with both giving and receiving support"
             ],
-            "answer_index": 0
+            "answer_index": 0,
+            "answer_description": "<p><strong>Maintaining a good balance of giving and receiving</strong> creates healthy, reciprocal relationships. Giving too much without receiving can lead to burnout and resentment, while receiving without giving creates one-sided dynamics. Being willing to both <em>offer support when others need it</em> and <em>accept support when you need it</em> demonstrates vulnerability, trust, and mutual respect. This balance creates interdependence—the foundation of satisfying, sustainable relationships.</p>"
         }
     ]
 }

@@ -3,6 +3,7 @@
     "slug": "human-connection-quiz",
     "description": "A quiz about the importance and impact of human connections",
     "assessment_type": "multiple_choice",
+    "image": "/images/connection-through-screens.avif",
     "intro_markdown": "Test your knowledge about human connection and social relationships.",
     "outro_markdown": "Thank you for completing the Human Connection Quiz!",
     "questions": [
@@ -15,7 +16,8 @@
                 "Greater knowledge",
                 "Better physical appearance"
             ],
-            "answer_index": 1
+            "answer_index": 1,
+            "answer_description": "<p>Human connection is fundamental to our <strong>emotional well-being</strong>. Research consistently shows that strong social bonds reduce stress, increase happiness, and provide a sense of belonging and purpose. While wealth, knowledge, and appearance have their place, they pale in comparison to the profound impact that meaningful relationships have on our mental health and overall life satisfaction.</p>"
         },
         {
             "question": "Which of the following statements about social support is true?",
@@ -26,7 +28,8 @@
                 "It is less important than financial support",
                 "It is only beneficial for extroverts"
             ],
-            "answer_index": 1
+            "answer_index": 1,
+            "answer_description": "<p>Social support has profound effects on both <strong>mental health and resilience</strong>. It's not just for crises—ongoing social connections help us cope with daily stressors, recover from setbacks, and maintain psychological well-being. <em>Both introverts and extroverts</em> benefit from meaningful social support, though they may seek it in different ways. Strong relationships provide emotional resources that help us navigate life's challenges with greater strength and adaptability.</p>"
         },
         {
             "question": "How does loneliness affect physical health?",
@@ -37,7 +40,8 @@
                 "It improves immune function",
                 "It enhances overall well-being"
             ],
-            "answer_index": 1
+            "answer_index": 1,
+            "answer_description": "<p>Loneliness has serious physical health consequences. Studies show it <strong>increases stress hormones</strong> like cortisol, which can lead to inflammation, weakened immune function, cardiovascular problems, and even shortened lifespan. <a href='https://news.cornell.edu/stories/2025/09/lifetime-social-ties-adds-healthy-aging' target='_blank'>Research from Cornell University</a> demonstrates that social connections throughout life contribute to healthier aging. The physical impact of loneliness is comparable to smoking 15 cigarettes a day, making social connection a critical health priority.</p>"
         },
         {
             "question": "What role does empathy play in human connections?",
@@ -48,7 +52,8 @@
                 "It is unnecessary for meaningful interactions",
                 "It only benefits the empathetic person"
             ],
-            "answer_index": 1
+            "answer_index": 1,
+            "answer_description": "<p><strong>Empathy</strong> is the ability to understand and share the feelings of another person. It's essential for creating <em>deeper relationships and genuine understanding</em>. When we practice empathy, we validate others' experiences, build trust, and create psychological safety. This emotional attunement benefits everyone involved—it strengthens bonds, reduces conflict, and creates a foundation for authentic connection. Without empathy, relationships remain superficial and transactional.</p>"
         },
         {
             "question": "Which activity is most likely to strengthen human connections?",
@@ -59,7 +64,8 @@
                 "Watching movies alone",
                 "Focusing on individual accomplishments"
             ],
-            "answer_index": 1
+            "answer_index": 1,
+            "answer_description": "<p><strong>Participating in team sports or group activities</strong> creates multiple opportunities for connection. Shared experiences build common ground, collaborative efforts foster interdependence, and working toward mutual goals strengthens bonds. Whether it's a sports team, book club, volunteer organization, or hobby group, these activities provide regular interaction, shared identity, and the satisfaction of collective achievement—all essential ingredients for meaningful relationships.</p>"
         },
         {
             "question": "What impact can technology have on human connection?",
@@ -70,7 +76,8 @@
                 "It has no effect on human interaction",
                 "It only benefits long-distance relationships"
             ],
-            "answer_index": 1
+            "answer_index": 1,
+            "answer_description": "<p>Technology is a double-edged sword for human connection. It <strong>can enhance connections</strong> by enabling video calls with distant loved ones, maintaining friendships across time zones, and finding communities with shared interests. However, it <strong>can hinder connections</strong> when it replaces face-to-face interaction, enables superficial engagement, or creates distraction from present-moment relationships. <br><br>The key is <em>intentional use</em>—using technology to supplement rather than substitute genuine human interaction.</p>"
         },
         {
             "question": "Why is vulnerability important in forming connections?",
@@ -81,7 +88,8 @@
                 "It is a sign of insecurity",
                 "It should be avoided at all costs"
             ],
-            "answer_index": 1
+            "answer_index": 1,
+            "answer_description": "<p>Vulnerability is the courage to show our true selves—including our fears, struggles, and imperfections. It <strong>allows for authenticity and trust</strong> by creating space for genuine connection. When we're vulnerable, we give others permission to be vulnerable too, fostering mutual understanding and deeper intimacy. <hr>Far from being weakness, vulnerability is actually a sign of <em>emotional strength and maturity</em>. It's the foundation upon which all meaningful relationships are built.</p>"
         }
     ]
 }

@@ -8,9 +8,18 @@ function AssessmentList({ assessments }) {
           <Link
             key={assessment.slug || index}
             to={`/${assessment.slug}`}
-            className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200 transform hover:-translate-y-1 block"
+            className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200 transform hover:-translate-y-1 block flex flex-col"
           >
-            <div className="p-5 sm:p-6 lg:p-8">
+            {assessment.image && (
+              <div className="w-full h-48 overflow-hidden">
+                <img
+                  src={assessment.image}
+                  alt={assessment.title}
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+            )}
+            <div className="p-5 sm:p-6 lg:p-8 flex-1">
               <div className="flex items-start justify-between mb-3">
                 <h2 className="text-xl sm:text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors line-clamp-2">
                   {assessment.title}

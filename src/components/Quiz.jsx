@@ -1,23 +1,31 @@
 import { useState } from 'react'
 
 function Quiz({ assessment, onBack }) {
-  const [stage, setStage] = useState('intro') // 'intro', 'quiz', 'results'
+  const [stage, setStage] = useState('intro') // 'intro', 'quiz', 'answered', 'results'
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0)
   const [answers, setAnswers] = useState([])
+  const [currentAnswer, setCurrentAnswer] = useState(null)
 
   const handleStart = () => {
     setStage('quiz')
   }
 
   const handleAnswer = (answerIndex) => {
-    const newAnswers = [...answers, answerIndex]
+    setCurrentAnswer(answerIndex)
+    setStage('answered')
+  }
+
+  const handleContinue = () => {
+    const newAnswers = [...answers, currentAnswer]
     setAnswers(newAnswers)
+    setCurrentAnswer(null)
 
     // Check if this was the last question
     if (currentQuestionIndex + 1 >= assessment.questions.length) {
       setStage('results')
     } else {
       setCurrentQuestionIndex(currentQuestionIndex + 1)
+      setStage('quiz')
     }
   }
 
@@ -35,48 +43,61 @@ function Quiz({ assessment, onBack }) {
     setStage('intro')
     setCurrentQuestionIndex(0)
     setAnswers([])
+    setCurrentAnswer(null)
   }
 
   // Intro stage
   if (stage === 'intro') {
     return (
       <div className="max-w-3xl mx-auto">
-        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-gray-100">
-          <button
-            onClick={onBack}
-            className="mb-6 text-blue-500 hover:text-blue-600 flex items-center gap-2 transition-colors font-medium group"
-          >
-            <svg className="w-5 h-5 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to assessments
-          </button>
-
-          <div className="text-center mb-8">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
-              {assessment.title}
-            </h2>
-
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full text-blue-700 text-sm sm:text-base font-medium">
-              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-              </svg>
-              {assessment.questions.length} {assessment.questions.length === 1 ? 'Question' : 'Questions'}
+        <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
+          {assessment.image && (
+            <div className="w-full h-64 overflow-hidden">
+              <img
+                src={assessment.image}
+                alt={assessment.title}
+                className="w-full h-full object-cover"
+              />
             </div>
-          </div>
+          )}
 
-          <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-6 mb-8 border border-blue-100">
-            <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
-              {assessment.intro_markdown}
-            </p>
-          </div>
+          <div className="p-6 sm:p-8 lg:p-10">
+            <button
+              onClick={onBack}
+              className="mb-6 text-blue-500 hover:text-blue-600 flex items-center gap-2 transition-colors font-medium group"
+            >
+              <svg className="w-5 h-5 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+              </svg>
+              Back to assessments
+            </button>
 
-          <button
-            onClick={handleStart}
-            className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-          >
-            Start Assessment
-          </button>
+            <div className="text-center mb-8">
+              <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
+                {assessment.title}
+              </h2>
+
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full text-blue-700 text-sm sm:text-base font-medium">
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                </svg>
+                {assessment.questions.length} {assessment.questions.length === 1 ? 'Question' : 'Questions'}
+              </div>
+            </div>
+
+            <div className="bg-gradient-to-br from-blue-50 to-purple-50 rounded-lg p-6 mb-8 border border-blue-100">
+              <p className="text-gray-700 text-base sm:text-lg leading-relaxed">
+                {assessment.intro_markdown}
+              </p>
+            </div>
+
+            <button
+              onClick={handleStart}
+              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Start Assessment
+            </button>
+          </div>
         </div>
       </div>
     )
@@ -112,9 +133,10 @@ function Quiz({ assessment, onBack }) {
             </h3>
 
             {currentQuestion.question_description && (
-              <p className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 italic leading-relaxed">
-                {currentQuestion.question_description}
-              </p>
+              <div
+                className="text-sm sm:text-base text-gray-600 mb-6 sm:mb-8 italic leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: currentQuestion.question_description }}
+              />
             )}
 
             <div className="space-y-3 sm:space-y-4">
@@ -135,6 +157,66 @@ function Quiz({ assessment, onBack }) {
                 </button>
               ))}
             </div>
+          </div>
+        </div>
+      </div>
+    )
+  }
+
+  // Answered stage - show answer description
+  if (stage === 'answered') {
+    const currentQuestion = assessment.questions[currentQuestionIndex]
+
+    return (
+      <div className="max-w-3xl mx-auto">
+        <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-10 border border-gray-100">
+          <div className="mb-8">
+            <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-3 mb-6">
+              <span className="text-sm sm:text-base font-semibold text-gray-700 bg-gray-100 px-4 py-2 rounded-full inline-flex items-center gap-2 w-fit">
+                <span className="w-6 h-6 bg-blue-500 text-white rounded-full flex items-center justify-center text-xs">
+                  {currentQuestionIndex + 1}
+                </span>
+                of {assessment.questions.length}
+              </span>
+              <div className="w-full sm:max-w-xs bg-gray-200 rounded-full h-2.5">
+                <div
+                  className="bg-gradient-to-r from-blue-500 to-purple-600 h-2.5 rounded-full transition-all duration-500 ease-out"
+                  style={{
+                    width: `${((currentQuestionIndex + 1) / assessment.questions.length) * 100}%`
+                  }}
+                />
+              </div>
+            </div>
+
+            <h3 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-3 text-gray-800 leading-tight">
+              {currentQuestion.question}
+            </h3>
+
+            <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 sm:p-6 mb-6">
+              <div className="flex items-start gap-3 mb-3">
+                <div className="flex-shrink-0 w-8 h-8 sm:w-9 sm:h-9 bg-blue-500 text-white rounded-lg flex items-center justify-center font-bold text-sm sm:text-base">
+                  {String.fromCharCode(65 + currentAnswer)}
+                </div>
+                <div className="flex-1">
+                  <p className="font-semibold text-gray-800 text-sm sm:text-base">Your answer:</p>
+                  <p className="text-gray-700 text-sm sm:text-base">{currentQuestion.options[currentAnswer]}</p>
+                </div>
+              </div>
+            </div>
+
+            {currentQuestion.answer_description && (
+              <div
+                className="bg-gradient-to-br from-purple-50 to-blue-50 border border-purple-200 rounded-xl p-5 sm:p-6 mb-6 text-sm sm:text-base text-gray-700 leading-relaxed"
+                dangerouslySetInnerHTML={{ __html: currentQuestion.answer_description }}
+              />
+            )}
+
+            <button
+              onClick={handleContinue}
+              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+            >
+              Continue
+            </button>
           </div>
         </div>
       </div>
