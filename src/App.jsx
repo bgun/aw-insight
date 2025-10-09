@@ -7,12 +7,13 @@ import Research from './pages/Research'
 import Subscribe from './pages/Subscribe'
 import Contact from './pages/Contact'
 import AssessmentPage from './pages/AssessmentPage'
+import SubscriberThankYou from './pages/SubscriberThankYou'
 
 function Layout() {
   const location = useLocation()
 
   // Check if current path is an assessment (not one of the static pages)
-  const staticPages = ['/', '/about', '/research', '/subscribe', '/contact', '/terms', '/privacy']
+  const staticPages = ['/', '/about', '/research', '/subscribe', '/contact', '/terms', '/privacy', '/subscriber-thank-you']
   const isQuizPage = !staticPages.includes(location.pathname)
 
   return (
@@ -27,6 +28,7 @@ function Layout() {
             <Route path="/research" element={<Research />} />
             <Route path="/subscribe" element={<Subscribe />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/subscriber-thank-you" element={<SubscriberThankYou />} />
             <Route path="/:slug" element={<AssessmentPage />} />
           </Routes>
         </div>

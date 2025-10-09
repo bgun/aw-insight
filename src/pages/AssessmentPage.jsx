@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import Quiz from '../components/Quiz'
+import TypeformEmbed from '../components/TypeformEmbed'
 
 function AssessmentPage() {
   const { slug } = useParams()
@@ -75,6 +76,11 @@ function AssessmentPage() {
         </div>
       </div>
     )
+  }
+
+  // Check if this is a Typeform assessment
+  if (assessment.assessment_type === 'typeform' && assessment.typeform_id) {
+    return <TypeformEmbed assessment={assessment} onBack={handleBack} />
   }
 
   return <Quiz assessment={assessment} onBack={handleBack} />
