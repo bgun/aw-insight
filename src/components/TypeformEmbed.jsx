@@ -30,16 +30,6 @@ function TypeformEmbed({ assessment, onBack }) {
         )}
 
         <div className="p-6 sm:p-8 lg:p-10">
-          <button
-            onClick={onBack}
-            className="mb-6 text-blue-500 hover:text-blue-600 flex items-center gap-2 transition-colors font-medium group"
-          >
-            <svg className="w-5 h-5 transition-transform group-hover:-translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-            </svg>
-            Back to assessments
-          </button>
-
           <div
             data-tf-live={assessment.typeform_id}
             style={{ minHeight: '600px' }}

@@ -1,8 +1,12 @@
 {
     "title": "Human Connection Quiz",
     "slug": "human-connection-quiz",
-    "description": "A quiz about the importance and impact of human connections",
+    "description": "Test your knowledge about human connection and social relationships.",
     "assessment_type": "typeform",
     "typeform_id": "01K72RA91ADVTVCJEDATPYDBMR",
-    "image": "/images/connection-through-screens.png"
+    "image": "/images/connection-through-screens.png",
+    "intro_markdown": "Test your knowledge about human connection and social relationships.",
+    "outro_markdown": "Thank you for completing the Human Connection Quiz!",
+    "questions": 11,
+    "completion_estimate": "3 minutes"
 }

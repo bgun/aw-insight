@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 function Footer() {
   return (
     <footer className="bg-gray-900 text-gray-300 mt-auto">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
           {/* Brand and description */}
           <div>
@@ -45,16 +45,16 @@ function Footer() {
                 Research
               </Link>
               <Link
+                to="/get-involved"
+                className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
+              >
+                Get Involved
+              </Link>
+              <Link
                 to="/subscribe"
                 className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
               >
                 Subscribe
-              </Link>
-              <Link
-                to="/contact"
-                className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
-              >
-                Contact
               </Link>
             </div>
           </div>

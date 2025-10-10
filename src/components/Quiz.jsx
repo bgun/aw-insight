@@ -93,7 +93,7 @@ function Quiz({ assessment, onBack }) {
 
             <button
               onClick={handleStart}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="w-full bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Start Assessment
             </button>
@@ -120,7 +120,7 @@ function Quiz({ assessment, onBack }) {
               </span>
               <div className="w-full sm:max-w-xs bg-gray-200 rounded-full h-2.5">
                 <div
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 h-2.5 rounded-full transition-all duration-500 ease-out"
+                  className="bg-[#4e7dee] h-2.5 rounded-full transition-all duration-500 ease-out"
                   style={{
                     width: `${((currentQuestionIndex + 1) / assessment.questions.length) * 100}%`
                   }}
@@ -180,7 +180,7 @@ function Quiz({ assessment, onBack }) {
               </span>
               <div className="w-full sm:max-w-xs bg-gray-200 rounded-full h-2.5">
                 <div
-                  className="bg-gradient-to-r from-blue-500 to-purple-600 h-2.5 rounded-full transition-all duration-500 ease-out"
+                  className="bg-[#4e7dee] h-2.5 rounded-full transition-all duration-500 ease-out"
                   style={{
                     width: `${((currentQuestionIndex + 1) / assessment.questions.length) * 100}%`
                   }}
@@ -213,7 +213,7 @@ function Quiz({ assessment, onBack }) {
 
             <button
               onClick={handleContinue}
-              className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:from-blue-600 hover:to-purple-700 text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="w-full bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Continue
             </button>
@@ -240,7 +240,7 @@ function Quiz({ assessment, onBack }) {
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-4 text-gray-800">
               Quiz Complete!
             </h2>
-            <div className="inline-block bg-gradient-to-r from-blue-500 to-purple-600 rounded-2xl p-6 sm:p-8 mb-4 shadow-lg">
+            <div className="inline-block bg-[#4e7dee] rounded-2xl p-6 sm:p-8 mb-4 shadow-lg">
               <div className="text-5xl sm:text-6xl lg:text-7xl font-bold text-white mb-2">
                 {percentage}%
               </div>
@@ -315,7 +315,7 @@ function Quiz({ assessment, onBack }) {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <button
               onClick={resetQuiz}
-              className="flex-1 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white font-bold py-3 sm:py-4 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-base"
+              className="flex-1 bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-3 sm:py-4 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-base"
             >
               Retake Quiz
             </button>

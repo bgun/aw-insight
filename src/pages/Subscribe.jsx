@@ -1,6 +1,6 @@
 function Subscribe() {
   return (
-    <div className="max-w-4xl mx-auto">
+    <div className="max-w-4xl mx-auto my-16">
       <div className="bg-white rounded-xl shadow-lg p-6 sm:p-8 lg:p-12 border border-gray-100">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
           Subscribe to Our Newsletter
@@ -52,12 +52,12 @@ function Subscribe() {
               outline: none;
             }
             #mc_embed_signup input[type="email"]:focus {
-              border-color: #3b82f6;
-              box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+              border-color: #4e7dee;
+              box-shadow: 0 0 0 3px rgba(78, 125, 238, 0.1);
             }
             #mc_embed_signup .button {
               width: 100%;
-              background: linear-gradient(to right, #3b82f6, #8b5cf6);
+              background: #4e7dee;
               color: white;
               font-weight: bold;
               padding: 14px 32px;
@@ -67,10 +67,10 @@ function Subscribe() {
               cursor: pointer;
               transition: all 0.2s;
               box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-              font-family: 'Nunito', sans-serif;
+              font-family: 'Open Sans', sans-serif;
             }
             #mc_embed_signup .button:hover {
-              background: linear-gradient(to right, #2563eb, #7c3aed);
+              background: #3d69d1;
               box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
               transform: translateY(-2px);
             }

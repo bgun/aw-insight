@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
+}
+
+.get-involved div[data-tf-widget] {
+  min-height: 900px !important;
 }
