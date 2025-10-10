@@ -8,16 +8,6 @@ function SubscribeComponent() {
           font-family: 'Noto Sans', sans-serif;
           width: 100%;
         }
-        #mc_embed_signup .indicates-required {
-          text-align: right;
-          font-size: 14px;
-          margin-bottom: 16px;
-          color: #6b7280;
-        }
-        #mc_embed_signup .asterisk {
-          color: #ef4444;
-          font-weight: bold;
-        }
         #mc_embed_signup .mc-field-group {
           margin-bottom: 24px;
         }
@@ -88,20 +78,15 @@ function SubscribeComponent() {
           target="_blank"
         >
           <div id="mc_embed_signup_scroll">
-            <div className="indicates-required">
-              <span className="asterisk">*</span> indicates required
-            </div>
             <div className="mc-field-group">
-              <label htmlFor="mce-EMAIL">
-                Email Address <span className="asterisk">*</span>
-              </label>
               <input
                 type="email"
                 name="EMAIL"
-                className="required email"
+                className="required email text-center"
                 id="mce-EMAIL"
                 required
                 defaultValue=""
+                placeholder="you@example.com"
               />
             </div>
             <div id="mce-responses" className="clear">

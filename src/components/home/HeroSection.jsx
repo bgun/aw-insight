@@ -9,7 +9,7 @@ function HeroSection() {
         loop
         muted
         playsInline
-        className="absolute top-0 left-0 min-w-full min-h-full w-auto h-auto object-cover"
+        className="absolute top-0 left-0 min-w-full min-h-full w-auto h-auto object-cover sm:scale-100 scale-[1.4]"
         style={{
           position: 'absolute',
           top: '50%',
