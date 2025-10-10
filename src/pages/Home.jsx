@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import HeroSection from '../components/home/HeroSection'
 import AssessmentsSection from '../components/home/AssessmentsSection'
 import SubscribeSection from '../components/home/SubscribeSection'
-import ResearchSection from '../components/home/ResearchSection'
+import DoctorQuoteSection from '../components/home/DoctorQuoteSection'
 
 function Home() {
   const [assessments, setAssessments] = useState([])
@@ -33,8 +33,8 @@ function Home() {
     <div>
       <HeroSection />
       <AssessmentsSection assessments={assessments} />
+      <DoctorQuoteSection />
       <SubscribeSection />
-      <ResearchSection />
     </div>
   )
 }

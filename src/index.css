@@ -1,7 +1,17 @@
 @import "tailwindcss";
 
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Noto Serif', serif;
+  font-weight: 200;
+}
+
+.logotype {
+  font-family: 'Noto Serif', serif;
+  font-weight: 700;
 }
 
 .get-involved div[data-tf-widget] {

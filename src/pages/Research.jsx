@@ -27,7 +27,7 @@ function Research() {
     <div className="max-w-5xl mx-auto my-16">
       <div className="text-center mb-12">
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-gray-900">
-          Research & Articles
+          Research & Blog 
         </h1>
         <p className="text-lg sm:text-xl text-gray-700 leading-relaxed max-w-3xl mx-auto">
           Explore curated research and articles on mental health, psychology, and self-improvement.

@@ -63,7 +63,7 @@ function Footer() {
         {/* Bottom bar */}
         <div className="pt-6 sm:pt-8 border-t border-gray-800 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-gray-500 text-xs sm:text-sm">
-            © {new Date().getFullYear()} Assessment Center. All rights reserved.
+            © {new Date().getFullYear()} Afterwork. All rights reserved.
           </p>
           <div className="flex gap-4 sm:gap-6">
             <Link

@@ -23,17 +23,17 @@ function Navbar() {
               alt="Afterwork"
               className="h-10 w-auto"
             />
-            <span className="text-xl sm:text-2xl font-bold text-gray-900">
+            <span className="text-xl sm:text-2xl font-light text-gray-900 logotype">
               Afterwork
             </span>
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-6 lg:space-x-8 h-full">
+          <div className="hidden md:flex items-center gap-6 lg:gap-8 h-full">
             <Link
               to="/"
               className={`text-gray-700 hover:text-[#4e7dee] transition-colors font-medium h-full flex items-center ${
-                isActive('/') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee]' : ''
+                isActive('/') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee] -mb-[6px]' : ''
               }`}
             >
               Home
@@ -41,7 +41,7 @@ function Navbar() {
             <Link
               to="/about"
               className={`text-gray-700 hover:text-[#4e7dee] transition-colors font-medium h-full flex items-center ${
-                isActive('/about') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee]' : ''
+                isActive('/about') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee] -mb-[6px]' : ''
               }`}
             >
               Our Mission
@@ -49,26 +49,16 @@ function Navbar() {
             <Link
               to="/research"
               className={`text-gray-700 hover:text-[#4e7dee] transition-colors font-medium h-full flex items-center ${
-                isActive('/research') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee]' : ''
+                isActive('/research') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee] -mb-[6px]' : ''
               }`}
             >
               Research
             </Link>
             <Link
               to="/get-involved"
-              className={`text-gray-700 hover:text-[#4e7dee] transition-colors font-medium h-full flex items-center ${
-                isActive('/get-involved') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee]' : ''
-              }`}
+              className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-2 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Get Involved
-            </Link>
-            <Link
-              to="/subscribe"
-              className={`text-gray-700 hover:text-[#4e7dee] transition-colors font-medium h-full flex items-center ${
-                isActive('/subscribe') ? 'border-b-[6px] border-[#4e7dee] text-[#4e7dee]' : ''
-              }`}
-            >
-              Subscribe
             </Link>
           </div>
 
@@ -124,20 +114,9 @@ function Navbar() {
               <Link
                 to="/get-involved"
                 onClick={toggleMenu}
-                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50 transition-colors font-medium px-4 py-2 rounded-lg ${
-                  isActive('/get-involved') ? 'text-[#4e7dee] bg-blue-50 border-l-4 border-[#4e7dee]' : ''
-                }`}
+                className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg text-center"
               >
                 Get Involved
-              </Link>
-              <Link
-                to="/subscribe"
-                onClick={toggleMenu}
-                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50 transition-colors font-medium px-4 py-2 rounded-lg ${
-                  isActive('/subscribe') ? 'text-[#4e7dee] bg-blue-50 border-l-4 border-[#4e7dee]' : ''
-                }`}
-              >
-                Subscribe
               </Link>
             </div>
           </div>
