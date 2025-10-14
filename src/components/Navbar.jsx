@@ -14,7 +14,7 @@ function Navbar() {
   }
 
   return (
-    <nav className="bg-white shadow-md border-b border-gray-200">
+    <nav className="bg-[#ffffffcc] shadow-md border-b border-gray-200 sticky top-0 z-50 backdrop-blur-sm">
       <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <Link to="/" className="flex items-center gap-3">
@@ -87,8 +87,8 @@ function Navbar() {
               <Link
                 to="/"
                 onClick={toggleMenu}
-                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50 transition-colors font-medium px-4 py-2 rounded-lg ${
-                  isActive('/') ? 'text-[#4e7dee] bg-blue-50 border-l-4 border-[#4e7dee]' : ''
+                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50/80 transition-colors font-medium px-4 py-2 rounded-lg ${
+                  isActive('/') ? 'text-[#4e7dee] bg-blue-50/80 border-l-4 border-[#4e7dee]' : ''
                 }`}
               >
                 Home
@@ -96,8 +96,8 @@ function Navbar() {
               <Link
                 to="/about"
                 onClick={toggleMenu}
-                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50 transition-colors font-medium px-4 py-2 rounded-lg ${
-                  isActive('/about') ? 'text-[#4e7dee] bg-blue-50 border-l-4 border-[#4e7dee]' : ''
+                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50/80 transition-colors font-medium px-4 py-2 rounded-lg ${
+                  isActive('/about') ? 'text-[#4e7dee] bg-blue-50/80 border-l-4 border-[#4e7dee]' : ''
                 }`}
               >
                 Our Mission
@@ -105,8 +105,8 @@ function Navbar() {
               <Link
                 to="/research"
                 onClick={toggleMenu}
-                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50 transition-colors font-medium px-4 py-2 rounded-lg ${
-                  isActive('/research') ? 'text-[#4e7dee] bg-blue-50 border-l-4 border-[#4e7dee]' : ''
+                className={`text-gray-700 hover:text-[#4e7dee] hover:bg-gray-50/80 transition-colors font-medium px-4 py-2 rounded-lg ${
+                  isActive('/research') ? 'text-[#4e7dee] bg-blue-50/80 border-l-4 border-[#4e7dee]' : ''
                 }`}
               >
                 Research

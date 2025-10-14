@@ -1,8 +1,15 @@
 function Research() {
   const articles = [
     {
+      title: "Fractional Careers: The Future of Work",
+      description: "In a world increasingly shaped by automation, remote work, and shifting professional priorities, the idea of a lifelong, linear career is fading fast. For experienced professionals who have built careers climbing the corporate ladder, this change can feel both liberating and daunting.<br /><br />Enter the fractional career - a modern, flexible way of working that lets professionals apply their hard-won expertise across multiple organisations at once. It's a model that values depth, strategic thinking, and human judgment; precisely the traits automation struggles to replicate.",
+      url: "https://www.connectd.com/learn/fractional-careers-the-future-of-work",
+      source: "ConnectD",
+      image: "/images/fractional-connectd.webp"
+    },
+    {
       title: "A lifetime of social ties adds up to healthy aging",
-      description: "Cornell University research explores how maintaining social connections throughout life contributes to healthier aging outcomes.",
+      description: "Lifetime social ties play a crucial role in promoting healthy aging, as revealed in this Cornell University article. Long-lasting relationships, spanning family, friends, and community connections, support physical and mental well-being throughout life.<br /><br />Researchers found that older adults with strong, sustained social networks are more likely to maintain cognitive abilities, experience less loneliness, and develop positive health behaviors.",
       url: "https://news.cornell.edu/stories/2025/09/lifetime-social-ties-adds-healthy-aging",
       source: "Cornell University",
       image: "/images/cornell-logo.png"
@@ -16,7 +23,7 @@ function Research() {
     },
     {
       title: "What Happens to Your Brain When You Retire?",
-      description: "It's challenging to stay mentally sharp and healthy through the major transition. Careful planning is key.",
+      description: "It's challenging to stay mentally sharp and healthy through the major transition. Careful planning is key.<br /><br />For the millions of Americans who retire each year, stopping work might seem like a well-deserved break. But it can also precipitate big changes in brain health, including an increased risk of cognitive decline and depression.",
       url: "https://www.nytimes.com/2025/03/26/well/mind/retirement-brain-mental-health-tips.html",
       source: "The New York Times",
       image: "/images/new-york-times-logo.png"
@@ -35,7 +42,7 @@ function Research() {
       </div>
 
       {articles.length > 0 ? (
-        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid gap-8 md:grid-cols-2">
           {articles.map((article, index) => (
             <a
               key={index}
@@ -45,7 +52,7 @@ function Research() {
               className="group bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200 transform hover:-translate-y-1 flex flex-col"
             >
               {article.image && (
-                <div className="w-full h-48 bg-gray-50 flex items-center justify-center p-6">
+                <div className="w-full h-64 bg-gray-50 flex items-center justify-center p-8">
                   <img
                     src={article.image}
                     alt={article.source || article.title}
@@ -53,20 +60,16 @@ function Research() {
                   />
                 </div>
               )}
-              <div className="p-6 flex-1">
-                <h3 className="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors mb-3 line-clamp-2">
+              <div className="p-8 flex-1">
+                <h3 className="text-2xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors mb-4">
                   {article.title}
                 </h3>
-                <p className="text-gray-600 text-sm mb-3 line-clamp-3">
-                  {article.description}
-                </p>
-                {article.source && (
-                  <p className="text-xs text-gray-500 mb-4 font-medium">
-                    {article.source}
-                  </p>
-                )}
-                <div className="flex items-center text-blue-600 font-medium text-sm group-hover:text-blue-700">
-                  Read More
+                <div
+                  className="text-gray-600 text-base mb-4 leading-relaxed"
+                  dangerouslySetInnerHTML={{ __html: article.description }}
+                />
+                <div className="flex items-center text-blue-600 font-medium text-base group-hover:text-blue-700">
+                  Read More from {article.source}
                   <svg className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>

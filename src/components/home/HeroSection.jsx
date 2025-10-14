@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function HeroSection() {
   return (
-    <section className="w-full relative overflow-hidden min-h-[500px] sm:min-h-[600px]">
+    <section className="w-full relative overflow-hidden min-h-[500px] sm:min-h-[600px] bg-[#1a472a]" >
       {/* Video Background */}
       <video
         autoPlay
@@ -33,10 +33,11 @@ function HeroSection() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6 text-white leading-tight">
             Transforming <span className="text-amber-300">What's Now</span><br />into <span className="text-amber-300">What's Next</span>.
           </h1>
-          <p className="text-lg sm:text-xl text-white mb-8 leading-relaxed">
-            Discover insights about yourself with thoughtfully designed assessments.
-            <br />
-            Take the first step toward greater self-awareness and well-being.
+          <p className="text-lg sm:text-xl text-white mt-12 mb-4 leading-relaxed">
+            Insightful tools for life transitions.
+          </p>
+          <p className="text-lg sm:text-xl text-white mb-12 leading-relaxed">
+            Navigate new challenges and discover your hidden strengths.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a

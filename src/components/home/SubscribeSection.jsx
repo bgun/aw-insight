@@ -10,8 +10,8 @@ function SubscribeSection() {
               Stay Updated
             </h2>
             <p className="text-lg sm:text-xl text-gray-700 mb-8 leading-relaxed text-center">
-              Don't miss out on new quizzes and assessments. Subscribe to our newsletter
-              and be the first to know when we release new content.
+              Don't miss out on Afterwork's newsletter. Subscribe
+              and be the first to know when we release new educational content.
             </p>
             <SubscribeComponent />
           </div>
