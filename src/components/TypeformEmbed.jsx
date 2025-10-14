@@ -20,7 +20,7 @@ function TypeformEmbed({ assessment, onBack }) {
     <div className="max-w-6xl mx-auto">
       <div className="bg-white rounded-xl shadow-lg overflow-hidden border border-gray-100">
         {assessment.image && (
-          <div className="w-full h-64 overflow-hidden">
+          <div className="w-full h-72 overflow-hidden">
             <img
               src={assessment.image}
               alt={assessment.title}

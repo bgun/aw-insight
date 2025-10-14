@@ -11,7 +11,7 @@ function AssessmentList({ assessments }) {
             className="group bg-white rounded-xl shadow-md hover:shadow-2xl transition-all duration-300 overflow-hidden border border-gray-100 hover:border-blue-200 transform hover:-translate-y-1 block flex flex-col"
           >
             {assessment.image && (
-              <div className="w-full h-48 overflow-hidden">
+              <div className="w-full h-64 overflow-hidden">
                 <img
                   src={assessment.image}
                   alt={assessment.title}
