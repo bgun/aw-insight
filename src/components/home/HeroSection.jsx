@@ -30,11 +30,12 @@ function HeroSection() {
       {/* Content */}
       <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="text-center max-w-4xl mx-auto">
-          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6 text-white leading-tight">
-            Improve Your Mental Health using Introspective Tools
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6 text-white leading-tight">
+            Transforming <span className="text-amber-300">What's Now</span><br />into <span className="text-amber-300">What's Next</span>.
           </h1>
           <p className="text-lg sm:text-xl text-white mb-8 leading-relaxed">
-            Discover insights about yourself through our thoughtfully designed assessments.
+            Discover insights about yourself with thoughtfully designed assessments.
+            <br />
             Take the first step toward greater self-awareness and well-being.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
