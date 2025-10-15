@@ -24,7 +24,7 @@ function HeroSection() {
         <source src="/images/forest-canopy.mp4" type="video/mp4" />
       </video>
 
-      {/* Black Overlay */}
+      {/* Black OverVlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-15 z-[1]"></div>
 
       {/* Content */}
@@ -34,24 +34,24 @@ function HeroSection() {
             Transforming <span className="text-amber-300">What's Now</span><br />into <span className="text-amber-300">What's Next</span>.
           </h1>
           <p className="text-lg sm:text-xl text-white mt-12 mb-4 leading-relaxed">
-            Insightful tools for life transitions.
+            Insightful tools for managing life's big transitions.
           </p>
           <p className="text-lg sm:text-xl text-white mb-12 leading-relaxed">
             Navigate new challenges and discover your hidden strengths.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link
+              to="/get-involved"
+              className="inline-block bg-[#4e7deedd] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl text-base sm:text-lg"
+            >
+              Get Involved
+            </Link>
             <a
               href="#assessments"
-              className="inline-block bg-[#4e7deedd] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl text-base sm:text-lg"
+              className="inline-block bg-[#ffffffdd] hover:bg-gray-50 text-gray-700 font-semibold py-4 px-8 rounded-full transition-all duration-200 text-base sm:text-lg"
             >
-              Explore Assessments
+              Tools and Courses
             </a>
-            <Link
-              to="/about"
-              className="inline-block bg-[#ffffffdd] hover:bg-gray-50 text-gray-700 font-semibold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg"
-            >
-              Learn More
-            </Link>
           </div>
         </div>
       </div>

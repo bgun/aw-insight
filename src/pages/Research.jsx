@@ -1,6 +1,13 @@
 function Research() {
   const articles = [
     {
+      title: "What is Causing Our Epidemic of Loneliness and How Can We Fix It?",
+      description: "U.S. surgeon general Vivek Murthy placed a spotlight on America's problem with loneliness when he declared the issue an epidemic in the spring of 2023. Murthy explained, in a letter that introduced an urgent advisory, that loneliness is far more than \"just a bad feeling\" and represents a major public health risk for both individuals and society. Murthy also pointed out that, although many people grew lonelier during the COVID-19 pandemic, about half of American adults had already reported experiences of loneliness even before the outbreak.<br /><br />Over the past four years, researchers with Harvard Graduate School of Education's Making Caring Common (MCC) project have been investigating the underlying causes of loneliness and in May they conducted a national survey with the company YouGov to find out what Americans had to say about the problem as well as the types of solutions they supported.",
+      url: "https://www.gse.harvard.edu/ideas/usable-knowledge/24/10/what-causing-our-epidemic-loneliness-and-how-can-we-fix-it",
+      source: "Harvard Graduate School of Education",
+      image: "/images/gse-harvard-loneliness.png"
+    },
+    {
       title: "Fractional Careers: The Future of Work",
       description: "In a world increasingly shaped by automation, remote work, and shifting professional priorities, the idea of a lifelong, linear career is fading fast. For experienced professionals who have built careers climbing the corporate ladder, this change can feel both liberating and daunting.<br /><br />Enter the fractional career - a modern, flexible way of working that lets professionals apply their hard-won expertise across multiple organisations at once. It's a model that values depth, strategic thinking, and human judgment; precisely the traits automation struggles to replicate.",
       url: "https://www.connectd.com/learn/fractional-careers-the-future-of-work",

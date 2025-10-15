@@ -56,7 +56,7 @@ function AssessmentList({ assessments }) {
                     </div>
                   )}
                 </div>
-                <span className="bg-[#4e7dee] group-hover:bg-[#3d69d1] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-lg transition-all duration-200 text-sm sm:text-base font-semibold shadow-sm group-hover:shadow-md">
+                <span className="bg-[#4e7dee] group-hover:bg-[#3d69d1] text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full transition-all duration-200 text-sm sm:text-base font-semibold shadow-sm group-hover:shadow-md">
                   Start Quiz
                 </span>
               </div>

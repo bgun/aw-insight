@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import HeroSection from '../components/home/HeroSection'
+import OurPurposeSection from '../components/home/OurPurposeSection'
 import AssessmentsSection from '../components/home/AssessmentsSection'
 import SubscribeSection from '../components/home/SubscribeSection'
 import DoctorQuoteSection from '../components/home/DoctorQuoteSection'

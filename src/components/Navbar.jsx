@@ -56,7 +56,7 @@ function Navbar() {
             </Link>
             <Link
               to="/get-involved"
-              className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-2 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+              className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-2 px-6 rounded-full transition-all duration-200 shadow-md hover:shadow-lg"
             >
               Get Involved
             </Link>
@@ -114,7 +114,7 @@ function Navbar() {
               <Link
                 to="/get-involved"
                 onClick={toggleMenu}
-                className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg text-center"
+                className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-3 px-6 rounded-full transition-all duration-200 shadow-md hover:shadow-lg text-center"
               >
                 Get Involved
               </Link>

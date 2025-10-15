@@ -43,9 +43,9 @@ function DoctorQuoteSection() {
                 
                   <Link
                     to="/research"
-                    className="inline-block bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 shadow-lg hover:shadow-xl text-base sm:text-lg"
+                    className="inline-block bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-full transition-all duration-200 shadow-lg hover:shadow-xl text-base sm:text-lg"
                   >
-                    View More Afterwork Research 
+                    View More Afterwork Research
                   </Link>
                 </div>
               </div>

@@ -69,7 +69,7 @@ function AssessmentPage() {
           </p>
           <button
             onClick={handleBack}
-            className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-semibold py-3 px-6 rounded-lg transition-all duration-200 shadow-md hover:shadow-lg"
+            className="bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-semibold py-3 px-6 rounded-full transition-all duration-200 shadow-md hover:shadow-lg"
           >
             Back to Assessments
           </button>

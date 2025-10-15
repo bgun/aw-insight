@@ -93,7 +93,7 @@ function Quiz({ assessment, onBack }) {
 
             <button
               onClick={handleStart}
-              className="w-full bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="w-full bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-full transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Start Assessment
             </button>
@@ -213,7 +213,7 @@ function Quiz({ assessment, onBack }) {
 
             <button
               onClick={handleContinue}
-              className="w-full bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-xl transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
+              className="w-full bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-4 px-8 rounded-full transition-all duration-200 text-base sm:text-lg shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
             >
               Continue
             </button>
@@ -315,13 +315,13 @@ function Quiz({ assessment, onBack }) {
           <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
             <button
               onClick={resetQuiz}
-              className="flex-1 bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-3 sm:py-4 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-base"
+              className="flex-1 bg-[#4e7dee] hover:bg-[#3d69d1] text-white font-bold py-3 sm:py-4 px-6 rounded-full transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-base"
             >
               Retake Quiz
             </button>
             <button
               onClick={onBack}
-              className="flex-1 bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 sm:py-4 px-6 rounded-xl transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-base"
+              className="flex-1 bg-gray-500 hover:bg-gray-600 text-white font-bold py-3 sm:py-4 px-6 rounded-full transition-all duration-200 shadow-md hover:shadow-lg text-sm sm:text-base"
             >
               Back to Assessments
             </button>
