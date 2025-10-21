@@ -27,10 +27,10 @@ function SubscriberThankYou() {
               Explore Assessments
             </Link>
             <Link
-              to="/research"
+              to="/resources"
               className="bg-gray-100 hover:bg-gray-200 text-gray-800 font-bold py-3 px-8 rounded-full transition-all duration-200 border border-gray-300"
             >
-              Read Research
+              Explore Resources
             </Link>
           </div>
         </div>

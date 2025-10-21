@@ -39,10 +39,10 @@ function Footer() {
                 About
               </Link>
               <Link
-                to="/research"
+                to="/resources"
                 className="text-gray-400 hover:text-white transition-colors text-sm sm:text-base"
               >
-                Research
+                Resources
               </Link>
               <Link
                 to="/get-involved"

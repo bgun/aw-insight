@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom'
 
 function HeroSection() {
   return (
-    <section className="w-full relative overflow-hidden min-h-[500px] sm:min-h-[600px] bg-[#1a472a]" >
+    <section className="w-full relative overflow-hidden min-h-[580px] sm:min-h-[680px] bg-[#1a472a]" >
       {/* Video Background */}
       <video
         autoPlay
@@ -24,8 +24,11 @@ function HeroSection() {
         <source src="/images/forest-canopy.mp4" type="video/mp4" />
       </video>
 
-      {/* Black OverVlay */}
+      {/* Black Overlay */}
       <div className="absolute top-0 left-0 w-full h-full bg-black opacity-15 z-[1]"></div>
+
+      {/* Bottom Gradient Fade */}
+      <div className="absolute bottom-0 left-0 w-full h-40 bg-gradient-to-b from-transparent to-indigo-100 z-[2]"></div>
 
       {/* Content */}
       <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
