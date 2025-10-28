@@ -34,13 +34,16 @@ function HeroSection() {
       <div className="relative z-10 max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-16 sm:py-20 lg:py-24">
         <div className="text-center max-w-4xl mx-auto">
           <h1 className="text-4xl sm:text-5xl lg:text-6xl mb-6 text-white leading-tight">
-            Transforming <span className="text-amber-300">What's Now</span><br />into <span className="text-amber-300">What's Next</span>.
+            Transforming <span className="text-amber-300">What's Now</span><br />into <span className="text-amber-300 text-bold">What's Next</span>.
           </h1>
           <p className="text-lg sm:text-xl text-white mt-12 mb-4 leading-relaxed">
-            Insightful tools for managing life's big transitions.
+            <span className="text-purple-300">Insightful tools</span> for managing life's big transitions.
+          </p>
+          <p className="text-lg sm:text-xl text-white mb-4 leading-relaxed">
+            Connect with others and build local community through <span className="text-rose-300">shared experiences</span>.
           </p>
           <p className="text-lg sm:text-xl text-white mb-12 leading-relaxed">
-            Navigate new challenges and discover your hidden strengths.
+            Navigate <span className="text-emerald-300">new challenges</span> and discover your hidden strengths.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
